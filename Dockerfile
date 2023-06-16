@@ -51,7 +51,7 @@ RUN \
     echo "# local repository (required by aur tools to be set up)" >> /etc/pacman.conf && \
     echo "[aurci2]" >> /etc/pacman.conf && \
     echo "SigLevel = Optional TrustAll" >> /etc/pacman.conf && \
-    echo "Server = file:///home/builder/workspace" >> /etc/pacman.conf &&/
+    echo "Server = file:///home/builder/workspace" >> /etc/pacman.conf && \
     echo "[multilib]" >> /etc/pacman.conf && \
     echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 
