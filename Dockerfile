@@ -53,7 +53,7 @@ RUN \
     echo "SigLevel = Optional TrustAll" >> /etc/pacman.conf && \
     echo "Server = file:///home/builder/workspace" >> /etc/pacman.conf && \
     echo "[multilib]" >> /etc/pacman.conf && \
-    echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+    echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf && \
     echo "DisableSandbox" >> /etc/pacman.conf
 
 CMD ["/update_repository.sh"]
